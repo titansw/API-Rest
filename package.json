@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines" : {
+    "node": ">= 18"
+  }, 
   "scripts": {
     "dev": "tsx watch src/server.ts",
     "knex": "node --import tsx ./node_modules/.bin/knex",
@@ -20,6 +23,7 @@
     "@typescript-eslint/eslint-plugin": "^6.13.2",
     "@typescript-eslint/parser": "^6.13.2",
     "eslint": "^8.55.0",
+    "sqlite3": "^5.1.6",
     "supertest": "^6.3.3",
     "tsup": "^8.0.1",
     "tsx": "^4.6.2",
@@ -31,7 +35,7 @@
     "dotenv": "^16.3.1",
     "fastify": "^4.24.3",
     "knex": "^3.0.1",
-    "sqlite3": "^5.1.6",
+    "pg": "^8.11.3",
     "zod": "^3.22.4"
   }
 }
